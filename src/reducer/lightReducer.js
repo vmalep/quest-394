@@ -1,9 +1,8 @@
-// LightContainer.js
-import React from "react";
-import { connect } from "react-redux";
-
-const mapStateToProps = state => ({
-  light: state
-});
-const LightComponent = ({ light }) => <div>{light}</div>;
-export default connect(mapStateToProps)(LightComponent);
+//lightReducer.js
+const lightReducer = (state = "on", action) => {
+  if (action.type === "SWITCH") {
+    return state === "on"? "off": "on";
+  }
+  return state;
+};
+export default lightReducer;
