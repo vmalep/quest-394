@@ -5,13 +5,13 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
-import lightReducer from './reducer/lightReducer';
+/* import lightReducer from './reducer/lightReducer'; */
 import counterReducer from './reducer/counterReducer';
 
-const lightStore = createStore(
+/* const lightStore = createStore(
   lightReducer,
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
-);
+); */
 
 const counterStore = createStore(
   counterReducer,
@@ -20,7 +20,7 @@ const counterStore = createStore(
 
 ReactDOM.render(
   <Provider
-    lightStore={lightStore}
+    /* lightStore={lightStore} */
     counterStore={counterStore}
   >
     <App />
