@@ -21,7 +21,7 @@ const counterStore = createStore(
 ReactDOM.render(
   <Provider
     /* lightStore={lightStore} */
-    counterStore={counterStore}
+    store={counterStore}
   >
     <App />
   </Provider>,
